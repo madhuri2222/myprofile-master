@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>16bitash</title>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono|Nunito" rel="stylesheet">
+    <style>
+        body {
+            margin: 0 0 50px 0;
+        }
+
+        .parallex {
+            background-image: url("https://onehdwallpaper.com/wp-content/uploads/2016/07/High-Quality-Classy-Images-Free-Download.jpg");
+            min-height: 754px;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .parallex-content {
+            text-align: center;
+            position: relative;
+            top: 100px;
+            animation-name: intro;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+        }
+
+        .parallex-text {
+            font-size: 70px;
+            font-weight: bolder;
+            color: white;
+            font-variant: small-caps;
+            margin-top: 0;
+            line-height: 130px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 45px 0;
+        }
+
+        .white-background {
+            background-color: white;
+        }
+
+        .gray-background {
+            background-color: #f1f1f1;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Nunito', sans-serif;
+            font-variant: small-caps;
+        }
+
+        .underline {
+            background-color: black;
+            height: 3px;
+            width: 0;
+            transition: width 1s;
+            transition-timing-function: ease-out;
+        }
+
+        .sub-heading {
+            text-align: center;
+            font-size: 30px;
+            font-variant: small-caps;
+        }
+
+        .content {
+            font-size: 22px;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .my-pic {
+            width: 200px;
+            margin-left: 20px;
+            border-radius: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        table {
+            text-align: center;
+            width: 100%;
+        }
+
+        img.icons {
+            width: 90px;
+            transition: width 0.3s, transform 0.3s;
+            transition-timing-function: ease-out;
+        }
+
+        .icon-text {
+            font-size: 20px;
+            transition: font-size 0.3s, font-weight 0.3s;
+        }
+
+        img.icons:hover {
+            width: 110px;
+            transform: rotate(360deg);
+        }
+
+        .gray-background:hover .underline {
+            width: 100%;
+        }
+
+        .white-background:hover .underline {
+            width: 100%;
+        }
+
+        img.icons:hover ~ .icon-text {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        @keyframes intro {
+            from {
+                opacity: 0;
+                top: 150px;
+            }
+            to {
+                opacity: 1;
+                top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="parallex">
+    <div class="parallex-content">
+        <div class="parallex-text">
+            Ashish Kumar <br> A.K.A <br> 16bitash
+        </div>
+    </div>
+</div>
+<div class="gray-background">
+    <div class="container">
+        <h1 class="heading">
+            <div style="display: inline-block">
+                About Me
+                <div class="underline"></div>
+            </div>
+        </h1>
+        <p class="sub-heading">I am
+            <del>lazy</del>
+            enthusiast programmer
+        </p>
+        <div style="text-align: center">
+            <img class="my-pic" src="https://image.ibb.co/mjgQsQ/cartoon_pic.png" alt="16bitash">
+        </div>
+        <hr>
+        <p class="content">
+            I liked logics since my childhood. When i was introduced to programmimg in my collage, I fell in love with
+            it.
+            Programming was the most logical thing I had ever seen. I started of with C which was followed by studing
+            data
+            structure in JAVA. I have been coding since and there's no going back. This is definitely one of my favorite
+            thing to
+            do. Other things that I like doing are:</p>
+        <ul class="content">
+            <li>Watching TV series</li>
+            <li>Playing video games</li>
+            <li>Hanging out with friends</li>
+            <li>Dining in fancy restaurants</li>
+            <li>Going on vacations</li>
+            <li>Listening to Linkin Park (R.I.P Chester Bennington)</li>
+        </ul>
+    </div>
+</div>
+<div class="white-background">
+    <div class="container">
+        <h1 class="heading">
+            <div style="display: inline-block">
+                Details
+                <div class="underline"></div>
+            </div>
+        </h1>
+        <hr>
+        <table class="details">
+            <tr>
+                <td class="content">
+                    <span style="font-weight: bold">Name:</span><br>
+                    Ashish Kumar
+                </td>
+                <td class="content">
+                    <span style="font-weight: bold">AGE:</span><br>
+                    20 years
+                </td>
+                <td class="content">
+                    <span style="font-weight: bold">Location:</span><br>
+                    New Delhi, India, Earth
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="gray-background">
+    <div class="container">
+        <h1 class="heading">
+            <div style="display: inline-block">
+                About Me
+                <div class="underline"></div>
+            </div>
+        </h1>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://github.com/16bitash">
+                        <img class="icons" src="https://pbs.twimg.com/profile_images/616309728688238592/pBeeJQDQ.png"
+                             alt="Github">
+                        <br>
+                        <span class="icon-text">Github</span>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.facebook.com/ashish.coolcheater">
+                        <img class="icons" src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook">
+                        <br>
+                        <span class="icon-text">Facebook</span>
+                    </a>
+                </td>
+                <td>
+                    <a href="#">
+                        <img class="icons"
+                             src="http://www.educationalappstore.com/images/upload/9534-logo-9534-logo-piazza.png"
+                             alt="Piazza">
+                        <br>
+                        <span class="icon-text">Piazza</span>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="white-background">
+    <div class="container">
+        <h1 class="heading">
+            <div style="display: inline-block">
+                Contact Me Via
+                <div class="underline"></div>
+            </div>
+        </h1>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    <a href="mailto: entropy.ash@gmal.com">
+                        <img class="icons"
+                             src="http://images.clipartpanda.com/mail-clipart-mail-order-clipart-free-clipart-images.png"
+                             alt="Mail">
+                        <br>
+                        <span class="icon-text">Mail</span>
+                    </a>
+                </td>
+                <td>
+                    <a href="tel: 9810399682">
+                        <img class="icons"
+                             src="https://cdn4.iconfinder.com/data/icons/rcons-phone/16/handset_round-2-512.png"
+                             alt="Call">
+                        <br>
+                        <span class="icon-text">Telephone</span>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
